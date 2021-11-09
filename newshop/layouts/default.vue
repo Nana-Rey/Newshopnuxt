@@ -105,6 +105,18 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          title:'itemlist',
+          to:'/itemlist'
+        },
+        {
+          title:'emit',
+          to:'/emit1'
+        },
+        {
+          title:'slot',
+          to:'/slot'
         }
       ],
       miniVariant: false,
