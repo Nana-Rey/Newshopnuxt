@@ -1,0 +1,12 @@
+# /etc/httpd/modules には配置されないので指定が必要
+# LoadModule wsgi_module /usr/local/lib64/python3.6/site-packages/mod_wsgi/server/mod_wsgi-py36.cpython-36m-x86_64-linux-gnu.so
+LoadModule wsgi_module /home/ec2-user/wsgi/lib/python3.7/site-packages/mod_wsgi/server/mod_wsgi-py37.cpython-37m-x86_64-linux-gnu.so
+
+<VirtualHost *:80>
+  ServerName 13.230.250.119:80
+  DocumentRoot /var/www/flask
+  WSGIScriptAlias / /var/www/flask/adapter.wsgi
+  <Directory "/var/www/flask/">
+    options Indexes FollowSymLinks +ExecCGI
+  </Directory>
+</VirtualHost>

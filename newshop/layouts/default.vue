@@ -117,6 +117,14 @@ export default {
         {
           title:'slot',
           to:'/slot'
+        },
+        {
+          title:'emit(input)',
+          to:'/Emitinput'
+        },
+        {
+          title:'detail',
+          to:'/detail'
         }
       ],
       miniVariant: false,

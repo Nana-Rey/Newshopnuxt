@@ -17,9 +17,8 @@
       src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
     ></v-img>
 
-    <mycard>
-    <v-card-title><template #nm>Badilico</template> </v-card-title>
-    </mycard>
+    <v-card-title>Cafe Badilico</v-card-title>
+
     <v-card-text>
       <v-row
         align="center"
@@ -39,11 +38,12 @@
         </div>
         
       </v-row>
-      <div></div>
+
       <div class="my-4 text-subtitle-1">
         $ • Italian, Cafe
       </div>
 
+      <div>Small plates, salads & sandwiches - an intimate setting with 12 indoor seats plus patio seating.</div>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
@@ -79,16 +79,10 @@
 </template>
 
 <script>
-
-   import mycard from '../components/Card.vue'
   export default {
-    components:{
-      mycard
-    },
     data: () => ({
       loading: false,
       selection: 1,
-      // number:""
     }),
 
     methods: {
