@@ -123,6 +123,10 @@ export default {
           to:'/Emitinput'
         },
         {
+          title:'vuex',
+          to:'/vuex'
+        },
+        {
           title:'detail',
           to:'/detail'
         }
