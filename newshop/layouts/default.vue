@@ -129,6 +129,9 @@ export default {
         {
           title:'detail',
           to:'/detail'
+        },{
+          title:'watch',
+          to:'/watch'
         }
       ],
       miniVariant: false,
