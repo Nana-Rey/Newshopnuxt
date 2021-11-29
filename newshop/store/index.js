@@ -1,4 +1,3 @@
-import Vuex from 'vuex'
 
 export const state =() => ({
     counter:0
