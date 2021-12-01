@@ -43,6 +43,12 @@
       <div class="my-4 text-subtitle-1">
         $ • Italian, Cafe
       </div>
+      <div class="container">
+      <v-btn @click="increase">+</v-btn>
+       {{ $store.state.counter }}個
+      <v-btn @click="decrease">-</v-btn>
+     
+  </div>
 
     </v-card-text>
 
@@ -75,19 +81,33 @@
         Reserve
       </v-btn>
     </v-card-actions>
+    <div>
+    <v-card>
+      メモ欄
+    <emitinput
+    :value="value"
+    @input="value = $event"
+    >
+    </emitinput>
+    </v-card>
+    <p>表示:{{value}}</p>
+  </div>
   </v-card>
 </template>
 
 <script>
 
    import mycard from '../components/Card.vue'
+   import emitinput from '~/components/ProductInput.vue'
   export default {
     components:{
-      mycard
+      mycard,
+      emitinput
     },
     data: () => ({
       loading: false,
       selection: 1,
+      value:''
       // number:""
     }),
 
@@ -97,6 +117,12 @@
 
         setTimeout(() => (this.loading = false), 2000)
       },
+      increase(){
+            this.$store.commit('increase')
+        },
+        decrease(){
+            this.$store.commit('decrease')
+        },
     },
   }
 
