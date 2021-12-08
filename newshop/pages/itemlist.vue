@@ -93,16 +93,19 @@
     <p>表示:{{value}}</p>
   </div>
   </v-card>
+
 </template>
 
 <script>
 
    import mycard from '../components/Card.vue'
    import emitinput from '~/components/ProductInput.vue'
+  
   export default {
     components:{
       mycard,
-      emitinput
+      emitinput,
+
     },
     data: () => ({
       loading: false,

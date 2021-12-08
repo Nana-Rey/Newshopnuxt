@@ -1,13 +1,13 @@
 <template>
   <div class="component">
-      <button @click="$emit('componentAlert')">ボタン</button>
+      <v-btn @click="$emit('componentAlert')">ボタン</v-btn>
       <p>{{ message }}</p>
   </div>
 </template>
 
 <script>
 export default {
-   props: ['message']
+
 }
 </script>
 
