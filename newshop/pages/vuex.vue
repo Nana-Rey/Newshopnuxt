@@ -1,8 +1,9 @@
 <template>
   <div class="container">
       <v-btn @click="increase">増加</v-btn>
+      {{ counter }}
       <v-btn @click="decrease">減少</v-btn>
-      {{ $store.state.counter }}
+      
   </div>
 </template>
 
@@ -16,6 +17,7 @@ export default {
             this.$store.commit('decrease')
         },
     },
+
 }
 </script>
 

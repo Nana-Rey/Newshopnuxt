@@ -1,6 +1,7 @@
 <template>
   <div class="emitinput">
       <input
+        placeholder="メモ"
        :value="value"
        @input="$emit('input',$event.target.value)"
        />
