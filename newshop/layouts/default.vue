@@ -111,6 +111,10 @@ export default {
           to:'/itemlist'
         },
         {
+          title:'memo',
+          to:'/memo'
+        },
+        {
           title:'emit',
           to:'/emit1'
         },
@@ -132,7 +136,8 @@ export default {
         },{
           title:'watch',
           to:'/watch'
-        }
+        },
+
       ],
       miniVariant: false,
       right: true,
