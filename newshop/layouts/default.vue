@@ -102,17 +102,8 @@ export default {
           to: '/'
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        },
-        {
           title:'itemlist',
           to:'/itemlist'
-        },
-        {
-          title:'memo',
-          to:'/memo'
         },
         {
           title:'emit',
@@ -131,7 +122,7 @@ export default {
           to:'/vuex'
         },
         {
-          title:'detail',
+          title:'default',
           to:'/detail'
         },{
           title:'watch',
